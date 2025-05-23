@@ -1,54 +1,112 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Bryan Chua's Profile</title>
-  <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto:300,400,500,700,900" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+body {
+  background: #D3D3D3; /* light grey */
+  color: #575F7D;
+  font-family: 'Lora', serif;
+  font-size: 17px;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
 
-  <div class="container">
-    <div class="intro-card">
-      <h1 id="main-title">Hello, I'm Bryan Chua 😎</h1>
-      <img src="images/Pic.jpeg" alt="Bryan Chua" class="profile-pic">
-      <p>I am a Year 2 Accountancy Student from SMU, doing my exchange in ESSEC Business School.</p>
-      <a href="http://lewagon.com" target="_blank" class="btn-blue">Discover Le Wagon</a>
-    </div>
+.container {
+  width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+}
 
-    <div class="interest-card">
-      <h2>Photographer</h2>
-      <p>I am passionate about Photography</p>
-    </div>
+.intro-card,
+.interest-card,
+.social-card {
+  background: white;
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
 
-    <div class="interest-card">
-      <h2>Financial Advisor</h2>
-      <p>I am passionate about Financial and Estate Planning</p>
-    </div>
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 0;
+}
 
-    <div class="interest-card">
-      <h2>Motorbikes</h2>
-      <p>I am passionate about Motorbikes, and I ride a Yamaha XSR155</p>
-    </div>
+h1 {
+  color: #575F7D;
+  font-size: 32px;
+  font-weight: 900;
+}
 
-    <div class="social-card">
-      <h2>Follow me</h2>
-      <ul class="list-inline">
-        <li>
-          <a href="https://www.linkedin.com/in/bryanchuaz/" target="_blank">
-            <img src="images/LinkedIn_icon.png" alt="LinkedIn" class="icon-img">
-          </a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/bchuaz/" target="_blank">
-            <img src="images/Instagram.png" alt="Instagram" class="icon-img">
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
+h2 {
+  color: #FFD700; /* gold */
+  font-size: 20px;
+  font-weight: 500;
+}
 
-</body>
-</html>
+a {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: #6B72E1;
+  font-weight: bold;
+}
+
+a:hover {
+  color: black;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.btn-blue {
+  background-color: #6B72E1;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.btn-blue:hover {
+  background-color: black;
+  color: white;
+}
+
+.list-inline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-inline li {
+  display: inline;
+  margin: 10px;
+}
+
+.icon-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.icon-img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Media Queries */
+@media (max-width: 960px) {
+  .container {
+    width: 700px;
+  }
+}
 
 @media (max-width: 720px) {
   .container {
