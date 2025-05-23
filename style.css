@@ -1,6 +1,5 @@
-/* RESET & BASE LAYOUT */
+/* BASE RESET */
 html, body {
-  height: 100%;
   margin: 0;
   padding: 0;
   font-family: 'Lora', serif;
@@ -8,20 +7,14 @@ html, body {
   color: #575F7D;
   font-size: 17px;
   font-weight: lighter;
-}
-
-.page-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  min-height: 100%;
-  padding: 40px 0;
+  text-align: center;
 }
 
 /* CONTAINER */
 .container {
   max-width: 960px;
   width: 90%;
+  margin: 40px auto;
   padding: 20px;
 }
 
@@ -93,7 +86,7 @@ p {
   display: block;
 }
 
-/* SOCIAL ICONS */
+/* SOCIAL MEDIA */
 .list-inline {
   list-style: none;
   padding: 0;
@@ -114,7 +107,7 @@ p {
   transform: scale(1.1);
 }
 
-/* RESPONSIVE */
+/* RESPONSIVE DESIGN */
 @media (max-width: 720px) {
   .profile-pic {
     width: 120px;
@@ -122,6 +115,10 @@ p {
   }
 
   .icon-img {
+    width: 40px;
+    height: 40px;
+  }
+}
     width: 40px;
     height: 40px;
   }
